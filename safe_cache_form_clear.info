@@ -1,0 +1,3 @@
+name = "Safe cache_form Clear"
+description = "Safely clear expired items from the cache_form table"
+core = "7.x"
