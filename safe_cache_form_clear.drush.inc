@@ -17,7 +17,9 @@ function safe_cache_form_clear_drush_command() {
   return $items;
 }
 
+/**
+ * Implements drush_COMMAND().
+ */
 function drush_safe_cache_form_clear() {
   safe_cache_form_clear();
 }
-
