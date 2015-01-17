@@ -11,7 +11,7 @@ function safe_cache_form_clear_drush_command() {
   $items = array();
 
   $items['safe-cache-form-clear'] = array(
-    'description' => t('Clear a limited number of expired items from the cache_form bin.'),
+    'description' => dt('Clear a limited number of expired items from the cache_form bin.'),
   );
 
   return $items;
