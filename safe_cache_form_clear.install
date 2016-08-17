@@ -8,6 +8,9 @@
  * Implements hook_requirements().
  */
 function safe_cache_form_clear_requirements($phase) {
+  if ($phase == 'install') {
+    return array();
+  }
   cache_set(__FUNCTION__, __FUNCTION__, 'cache_form', CACHE_TEMPORARY);
 
   $results = db_select('cache_form')
